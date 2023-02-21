@@ -1,0 +1,10 @@
+---
+- name: the palybook is to install the package of tree
+  hosts: all
+  become: true
+  tasks:
+  - name: installing package of tree
+    yum:
+      name: tree
+      state: latest
+
